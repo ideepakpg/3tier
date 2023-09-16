@@ -11,7 +11,7 @@
         }
     </style>
 </head>
-<body>
+<body style="height: 545px">
     <form id="form1" runat="server">
         <div>
             <table class="auto-style1">
@@ -48,6 +48,26 @@
                     </td>
                 </tr>
                 <tr>
+                    <td>
+                        <asp:Label ID="Label6" runat="server" Text="Username"></asp:Label>
+                    </td>
+                    <td>
+                        <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Label ID="Label7" runat="server" Text="Password"></asp:Label>
+                    </td>
+                    <td>
+                        <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
@@ -56,7 +76,23 @@
                         <asp:Label ID="Label5" runat="server"></asp:Label>
                     </td>
                     <td>
-                        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Register" />
+                        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Register" Width="80px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>
+                        <asp:Label ID="Label8" runat="server" Text="Already have an account ? then login here."></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>
+                        <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Login" />
                     </td>
                 </tr>
                 <tr>

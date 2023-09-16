@@ -14,7 +14,7 @@ namespace _3tier_regform
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            int i = obj.Insert(TextBox1.Text, TextBox2.Text, TextBox3.Text, FileUpload1.FileName);
+            int i = obj.Insert(TextBox1.Text, TextBox2.Text, TextBox3.Text, FileUpload1.FileName, TextBox4.Text, TextBox5.Text);
             if (i != 0)
             {
                 Label5.Text = "Registration Success";
@@ -23,6 +23,11 @@ namespace _3tier_regform
             {
                 Label5.Text = "Registration Failed";
             }
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Login.aspx");
         }
     }
 }
